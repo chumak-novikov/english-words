@@ -3,8 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "lint-staged": {
-    "*.{ts,tsx}": ["prettier --write"],
-    "*.css": "stylelint --fix"
+    "*.{ts,tsx}": ["prettier --write"]
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.52.0",
