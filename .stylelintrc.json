@@ -11,7 +11,7 @@
   "rules": {
     "property-no-vendor-prefix": null,
     "no-descending-specificity": null,
-    "selector-class-pattern": null,
+    "selector-class-pattern": "^([a-z]-?){0,}[a-z]$",
     "custom-property-empty-line-before": null
   }
 }
