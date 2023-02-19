@@ -1,0 +1,30 @@
+@import './colors';
+@import './fonts';
+@import './typography';
+@import './vars';
+@import './reset';
+
+html,
+body,
+#root {
+  min-height: 100vh;
+  background-color: var(--color-backgroud);
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(175 175 175 / 25%);
+  border: 3px solid var(--color-background);
+  border-radius: 8px;
+
+  &:hover {
+    background-color: rgb(175 175 175 / 54%);
+  }
+}

@@ -5,5 +5,5 @@
   "tabWidth": 2,
   "useTabs": false,
   "singleAttributePerLine": true,
-  "endOfLine": "crlf"
+  "endOfLine": "auto"
 }

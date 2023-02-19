@@ -1,0 +1,167 @@
+@mixin h1-light($color: var(--color-text-primary)) {
+  font-family: 'Rokkitt Light', sans-serif;
+  font-size: var(--size-32px);
+  font-weight: 300;
+  color: $color;
+}
+
+@mixin h1-regular($color: var(--color-text-primary)) {
+  font-family: 'Rokkitt Regular', sans-serif;
+  font-size: var(--size-32px);
+  font-weight: 400;
+  color: $color;
+}
+
+@mixin h1-medium($color: var(--color-text-primary)) {
+  font-family: 'Rokkitt Medium', sans-serif;
+  font-size: var(--size-32px);
+  font-weight: 500;
+  color: $color;
+}
+
+@mixin h1-semibold($color: var(--color-text-primary)) {
+  font-family: 'Rokkitt SemiBold', sans-serif;
+  font-size: var(--size-32px);
+  font-weight: 600;
+  color: $color;
+}
+
+@mixin h1-bold($color: var(--color-text-primary)) {
+  font-family: 'Rokkitt Bold', sans-serif;
+  font-size: var(--size-32px);
+  font-weight: 700;
+  color: $color;
+}
+
+@mixin h2-light($color: var(--color-text-primary)) {
+  font-family: 'Rokkitt Light', sans-serif;
+  font-size: var(--size-24px);
+  font-weight: 300;
+  color: $color;
+}
+
+@mixin h2-regular($color: var(--color-text-primary)) {
+  font-family: 'Rokkitt Regular', sans-serif;
+  font-size: var(--size-24px);
+  font-weight: 400;
+  color: $color;
+}
+
+@mixin h2-medium($color: var(--color-text-primary)) {
+  font-family: 'Rokkitt Medium', sans-serif;
+  font-size: var(--size-24px);
+  font-weight: 500;
+  color: $color;
+}
+
+@mixin h2-semibold($color: var(--color-text-primary)) {
+  font-family: 'Rokkitt SemiBold', sans-serif;
+  font-size: var(--size-24px);
+  font-weight: 600;
+  color: $color;
+}
+
+@mixin h2-bold($color: var(--color-text-primary)) {
+  font-family: 'Rokkitt Bold', sans-serif;
+  font-size: var(--size-24px);
+  font-weight: 700;
+  color: $color;
+}
+
+@mixin ui-light($color: var(--color-text-primary)) {
+  font-family: 'SourceSansPro Light', sans-serif;
+  font-size: var(--size-24px);
+  font-weight: 300;
+  color: $color;
+}
+
+@mixin ui-regular($color: var(--color-text-primary)) {
+  font-family: 'SourceSansPro Regular', sans-serif;
+  font-size: var(--size-16px);
+  font-weight: 400;
+  color: $color;
+}
+
+@mixin ui-semibold($color: var(--color-text-primary)) {
+  font-family: 'SourceSansPro SemiBold', sans-serif;
+  font-size: var(--size-16px);
+  font-weight: 600;
+  color: $color;
+}
+
+@mixin ui-bold($color: var(--color-text-primary)) {
+  font-family: 'SourceSansPro Bold', sans-serif;
+  font-size: var(--size-16px);
+  font-weight: 700;
+  color: $color;
+}
+
+@mixin p1-light($color: var(--color-text-primary)) {
+  font-family: 'NotoSans Light', sans-serif;
+  font-size: var(--size-20px);
+  font-weight: 300;
+  color: $color;
+}
+
+@mixin p1-regular($color: var(--color-text-primary)) {
+  font-family: 'NotoSans Regular', sans-serif;
+  font-size: var(--size-20px);
+  font-weight: 400;
+  color: $color;
+}
+
+@mixin p1-medium($color: var(--color-text-primary)) {
+  font-family: 'NotoSans Medium', sans-serif;
+  font-size: var(--size-20px);
+  font-weight: 500;
+  color: $color;
+}
+
+@mixin p1-semibold($color: var(--color-text-primary)) {
+  font-family: 'NotoSans SemiBold', sans-serif;
+  font-size: var(--size-20px);
+  font-weight: 600;
+  color: $color;
+}
+
+@mixin p1-bold($color: var(--color-text-primary)) {
+  font-family: 'NotoSans Bold', sans-serif;
+  font-size: var(--size-20px);
+  font-weight: 700;
+  color: $color;
+}
+
+@mixin p2-light($color: var(--color-text-primary)) {
+  font-family: 'NotoSans Light', sans-serif;
+  font-size: var(--size-16px);
+  font-weight: 300;
+  color: $color;
+}
+
+@mixin p2-regular($color: var(--color-text-primary)) {
+  font-family: 'NotoSans Regular', sans-serif;
+  font-size: var(--size-16px);
+  font-weight: 400;
+  color: $color;
+}
+
+@mixin p2-medium($color: var(--color-text-primary)) {
+  font-family: 'NotoSans Medium', sans-serif;
+  font-size: var(--size-16px);
+  font-weight: 500;
+  color: $color;
+}
+
+@mixin p2-semibold($color: var(--color-text-primary)) {
+  font-family: 'NotoSans SemiBold', sans-serif;
+  font-size: var(--size-16px);
+  font-weight: 600;
+  color: $color;
+}
+
+@mixin p2-bold($color: var(--color-text-primary)) {
+  font-family: 'NotoSans Bold', sans-serif;
+  font-size: var(--size-16px);
+  font-weight: 700;
+  color: $color;
+}
