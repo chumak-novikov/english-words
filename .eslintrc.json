@@ -1,44 +1,39 @@
 {
-    "env": {
-        "browser": true,
-        "es2022": true
+  "env": {
+    "browser": true,
+    "es2022": true
+  },
+  "extends": ["plugin:react/recommended", "airbnb", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     },
-    "extends": [
-        "plugin:react/recommended",
-        "airbnb",
-        "prettier"
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint", "prettier"],
+  "rules": {
+    "prettier/prettier": "error",
+    "import/prefer-default-export": "off",
+    "react/jsx-filename-extension": "off",
+    "no-restricted-exports": "off",
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "react/jsx-fragments": ["error", "element"],
+    "react/require-default-props": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["error"],
+    "react/jsx-props-no-spreading": "off",
+    "react/function-component-definition": [
+      "error",
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
     ],
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": "latest",
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react",
-        "@typescript-eslint",
-        "prettier"
-    ],
-    "rules": {
-        "prettier/prettier": "error",
-        "import/prefer-default-export": "off",
-        "react/jsx-filename-extension": "off",
-        "no-restricted-exports": "off",
-        "import/extensions": "off",
-        "import/no-unresolved": "off",
-        "react/jsx-fragments": ["error", "element"],
-        "react/require-default-props": "off",
-        "no-unused-vars": "off",
-        "@typescript-eslint/no-unused-vars": ["error"],
-        "react/jsx-props-no-spreading": "off",
-        "react/function-component-definition": ["error", {
-            "namedComponents": "arrow-function",
-            "unnamedComponents": "arrow-function"
-        }],
-        "lines-between-class-members": "off",
-        "class-methods-use-this": "off",
-        "linebreak-style": ["warn", "windows"]
-    }
+    "lines-between-class-members": "off",
+    "class-methods-use-this": "off",
+    "linebreak-style": "off"
+  }
 }

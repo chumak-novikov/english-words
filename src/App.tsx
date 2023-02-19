@@ -22,6 +22,20 @@ const App2 = (props: any) => {
     { id: 1 },
   ];
 
+  console.log(
+    arr,
+    prop1,
+    prop2,
+    props3,
+    prop4,
+    prop5,
+    prop6,
+    prop7,
+    prop8,
+    prop9,
+    prop10
+  );
+
   return <div />;
 };
 
@@ -30,7 +44,7 @@ const App = () => (
     className="App"
     onChange={() => {}}
   >
-    dawdwa
+    <App2 />
   </div>
 );
 
