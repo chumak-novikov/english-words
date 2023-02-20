@@ -1,0 +1,65 @@
+@import 'src/styles/typography';
+
+@mixin label($color) {
+  color: $color;
+
+  &.focused {
+    color: var(--color-input-focus);
+  }
+
+  &.error {
+    color: var(--color-input-error);
+  }
+}
+
+@mixin input($color) {
+  .fieldset {
+    border-color: $color;
+  }
+
+  &.focused {
+    color: var(--color-text-primary);
+
+    .fieldset {
+      border-color: var(--color-input-focus);
+    }
+  }
+
+  &.error {
+    .fieldset {
+      border-color: var(--color-input-error);
+    }
+  }
+}
+
+.root {
+  padding-top: var(--size-8px);
+  margin-bottom: var(--size-8px);
+}
+
+.text-field {
+  .label {
+    &.required span {
+      color: var(--color-error);
+    }
+
+    @include p2-regular(var(--color-text-secondary));
+    @include label(var(--color-text-secondary));
+  }
+
+  .input {
+    @include p2-regular(var(--color-text-secondary));
+    @include input(var(--color-input));
+  }
+
+  &:hover {
+    .label {
+      @include label(var(--color-text-primary));
+    }
+
+    .input {
+      @include p2-regular;
+      @include input(var(--color-input-hover));
+    }
+  }
+}
