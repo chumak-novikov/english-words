@@ -1,0 +1,43 @@
+@import 'src/styles/typography';
+
+.root {
+  margin-bottom: var(--size-12px);
+
+  .tab {
+    border-bottom: 1px solid var(--color-tab-divider);
+    border-radius: var(--size-4px) var(--size-4px) 0 0;
+
+    @include ui-light;
+
+    &.active {
+      @include ui-regular(var(--color-text-info));
+    }
+  }
+
+  .indicator {
+    background-color: var(--color-active-tab);
+  }
+
+  &.vertical {
+    width: fit-content;
+    margin: 0;
+
+    .tab {
+      align-items: end;
+      width: 200px;
+      margin-bottom: var(--size-12px);
+      background-color: var(--color-vertical-tab);
+      border: none;
+      border-radius: var(--size-8px) 0 0 0;
+
+      &.active {
+        color: var(--color-text-primary);
+        background-color: var(--color-vertical-tab-active);
+      }
+    }
+
+    .indicator {
+      display: none;
+    }
+  }
+}

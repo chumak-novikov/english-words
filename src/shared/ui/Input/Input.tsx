@@ -4,7 +4,7 @@ import classNames from 'classnames';
 
 import styles from './Input.module.scss';
 
-interface InputProps {
+type InputProps = {
   value?: string;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   error?: boolean;
@@ -13,7 +13,7 @@ interface InputProps {
   label?: string;
   required?: boolean;
   className?: string;
-}
+};
 
 export const Input = (props: InputProps) => {
   const {
