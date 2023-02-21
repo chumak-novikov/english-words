@@ -11,7 +11,6 @@ const App = () => (
       required
       value="Sergey"
     />
-
     <Input
       label="Label"
       required
