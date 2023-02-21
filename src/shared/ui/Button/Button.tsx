@@ -1,16 +1,16 @@
 import React from 'react';
-
 import { Button as MUIButton } from '@mui/material';
+
 import styles from './Button.module.scss';
 
-interface ButtonProps {
+type ButtonProps = {
   children: React.ReactNode;
   disabled?: boolean;
   onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   type?: 'button' | 'submit';
   color?: 'contained' | 'text';
   className?: string;
-}
+};
 
 export const Button = (props: ButtonProps) => {
   const {
