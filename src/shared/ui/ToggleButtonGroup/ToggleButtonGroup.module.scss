@@ -1,0 +1,29 @@
+@import 'src/styles/typography';
+
+.root {
+  margin-bottom: var(--size-12px);
+
+  .button {
+    min-width: 10rem;
+    height: var(--size-56px);
+    padding: var(--size-12px) var(--size-24px);
+    background-color: var(--color-toggle-button);
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: var(--color-toggle-button-hover);
+
+      &.active {
+        background-color: var(--color-toggle-button-active);
+      }
+    }
+
+    &.active {
+      background-color: var(--color-toggle-button-active);
+
+      @include ui-light;
+    }
+
+    @include ui-light;
+  }
+}

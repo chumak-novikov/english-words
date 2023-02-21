@@ -4,6 +4,7 @@
   margin-bottom: var(--size-12px);
 
   .tab {
+    height: var(--size-56px);
     border-bottom: 1px solid var(--color-tab-divider);
     border-radius: var(--size-4px) var(--size-4px) 0 0;
 
@@ -25,14 +26,20 @@
     .tab {
       align-items: end;
       width: 200px;
+      min-width: 10rem;
       margin-bottom: var(--size-12px);
       background-color: var(--color-vertical-tab);
       border: none;
       border-radius: var(--size-8px) 0 0 0;
+      transition: background-color 0.2s;
 
       &.active {
         color: var(--color-text-primary);
         background-color: var(--color-vertical-tab-active);
+      }
+
+      &:hover:not(.active) {
+        background-color: var(--color-vertical-tab-hover);
       }
     }
 

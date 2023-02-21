@@ -3,6 +3,7 @@
 .root {
   &.button,
   &.text {
+    display: block;
     height: var(--size-56px);
     padding: var(--size-8px) var(--size-36px);
     margin-bottom: var(--size-12px);
