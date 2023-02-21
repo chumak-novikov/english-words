@@ -70,7 +70,7 @@
 
 @mixin ui-light($color: var(--color-text-primary)) {
   font-family: 'SourceSansPro Light', sans-serif;
-  font-size: var(--size-24px);
+  font-size: var(--size-16px);
   font-weight: 300;
   color: $color;
 }
