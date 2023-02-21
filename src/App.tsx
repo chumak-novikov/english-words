@@ -5,6 +5,7 @@ import { TabContext } from '@mui/lab';
 import { Input } from './shared/ui/Input';
 import { Button } from './shared/ui/Button';
 import { TabPanel, Tabs } from './shared/ui/Tabs';
+import { ToggleButtonGroup } from './shared/ui/ToggleButtonGroup';
 
 const tabs = [
   {
@@ -21,8 +22,14 @@ const tabs = [
   },
 ];
 
-const App = () => {
+const buttons = [
+  { value: '1', label: 'dark' },
+  { value: '2', label: 'light' },
+];
+
+export const App = () => {
   const [tab, setTab] = React.useState('1');
+  const [button, setButton] = React.useState('1');
 
   return (
     <div className="app">
@@ -68,7 +75,7 @@ const App = () => {
       <TabContext value={tab}>
         <Tabs
           tabs={tabs}
-          onChange={(e, value) => setTab(value)}
+          onChange={setTab}
         />
 
         <TabPanel value="1">Tab 1 value</TabPanel>
@@ -87,13 +94,17 @@ const App = () => {
             <Tabs
               orientation="vertical"
               tabs={tabs}
-              onChange={(e, value) => setTab(value)}
+              onChange={setTab}
             />
           </div>
         </div>
       </TabContext>
+
+      <ToggleButtonGroup
+        items={buttons}
+        value={button}
+        onChange={setButton}
+      />
     </div>
   );
 };
-
-export default App;
