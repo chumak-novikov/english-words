@@ -11,6 +11,9 @@ type ButtonProps = {
   type?: 'button' | 'submit';
   color?: 'contained' | 'text';
   fullWidth?: boolean;
+  size?: 'large' | 'medium';
+  startIcon?: React.ReactNode;
+  endIcon?: React.ReactNode;
   className?: string;
 };
 
@@ -22,13 +25,16 @@ export const Button = (props: ButtonProps) => {
     children,
     disabled,
     fullWidth,
+    size = 'large',
+    startIcon,
+    endIcon,
     className: externalClassName,
   } = props;
 
   const buttonClasses = {
     root: classNames(styles.root, externalClassName),
-    contained: styles.button,
-    text: styles.text,
+    contained: classNames(styles.button, styles[size]),
+    text: classNames(styles.text, styles[size]),
     disabled: styles.disabled,
   };
 
@@ -40,7 +46,9 @@ export const Button = (props: ButtonProps) => {
       type={type}
       onClick={onClick}
       classes={buttonClasses}
-      size="large"
+      size={size}
+      startIcon={startIcon}
+      endIcon={endIcon}
     >
       {children}
     </MUIButton>

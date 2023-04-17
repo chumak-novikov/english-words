@@ -6,6 +6,8 @@ import { Input } from './shared/ui/Input';
 import { Button } from './shared/ui/Button';
 import { TabPanel, Tabs } from './shared/ui/Tabs';
 import { ToggleButtonGroup } from './shared/ui/ToggleButtonGroup';
+import { WordsCard } from './shared/WordsCard';
+import { Word } from './shared/WordsCard/WordsCard';
 
 const tabs = [
   {
@@ -31,8 +33,35 @@ export const App = () => {
   const [tab, setTab] = React.useState('1');
   const [button, setButton] = React.useState('1');
 
+  const words: Word[] = [
+    {
+      ru: 'яблоко',
+      en: 'apple',
+    },
+    {
+      ru: 'банан',
+      en: 'banana',
+    },
+    {
+      ru: 'ананас',
+      en: 'pineapple',
+    },
+    {
+      ru: 'морковка',
+      en: 'carrot',
+    },
+  ];
+
   return (
     <div className="app">
+      <WordsCard words={words} />
+
+      <WordsCard
+        clickable
+        words={words}
+        initialLang="ru"
+      />
+
       <Input
         label="Label"
         required
